@@ -1,0 +1,157 @@
+@import "variables"
+@import "main"
+
+.main-header
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 99
+  ul
+    li
+      list-style: none
+      margin-bottom: 15px
+      a
+        padding: 5px 15px
+        background-color: rgba($black-color,.8)
+        color: $white-color
+        text-transform: uppercase
+        @extend .animation-ease
+        &:hover
+          margin-left: 10px
+          background-color: rgba($sky-color,.8)
+
+.slider
+  position: relative
+  img
+    width: 100%
+    height: 100vh
+    object-fit: cover
+
+  .down
+    position: relative
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: $white-color
+    margin: -40px auto 0
+    color: $black-color
+    box-shadow: 0 0 5px $black-color
+
+.resumen
+  .container
+    div
+      width: 37%
+
+.services
+  margin-top: 150px
+  .center-side
+    margin-top: 50px
+    .cuadrado
+      width: 430px
+      height: 430px
+      position: relative
+      transform: rotate(45deg)
+      overflow: hidden
+      .content
+        transform: rotate(-45deg)
+        position: absolute
+        top: -100px
+        left: -100px
+        bottom: -100px
+        right: -100px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+  .left-side
+    .service-item
+      text-align: right
+      margin-bottom: 50px
+      .icon
+        margin-left: 25px
+      &:nth-child(2)
+        margin-right: 150px
+
+  .right-side
+    .service-item
+      margin-bottom: 50px
+      .icon
+        margin-right: 25px
+      &:nth-child(2)
+        margin-left: 150px
+
+.projects
+  background-color: $black-color
+  padding: 75px 0
+  margin-top: 75px
+  .title
+    color: $white-color
+  .bx-wrapper
+    background-color: transparent
+    border: 0
+    box-shadow: none
+    .bx-viewport
+      padding: 40px 0
+      .project-item
+        height: 250px
+        margin-left: 10px
+        line-height: normal
+        @extend .animation-ease
+        box-shadow: 0 0 25px rgba($black-color, .6)
+        .project-info
+          position: absolute
+          z-index: 2
+          top: 0
+          left: 0
+          bottom: 0
+          right: 0
+          color: white
+          padding: 30px
+          box-sizing: border-box
+          .project-title
+            margin: 0
+          mark
+            padding: 3px 15px
+            background-color: $black-color
+            color: $white-color
+          a
+            color: white
+            position: absolute
+            bottom: 30px
+            right: 30px
+
+          &.green-bg
+            background-color: rgba($green-color, .9)
+          &.yellow-bg
+            background-color: rgba($yellow-color, .8)
+          &.pink-bg
+            background-color: rgba($pink-color, .8)
+          &.purple-bg
+            background-color: rgba($purple-color, .8)
+          &.sky-bg
+            background-color: rgba($sky-color, .8)
+        &:hover
+          z-index: 5
+          transform: scale(1.15, 1.15)
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+    .bx-controls
+      a
+        text-indent: inherit
+        color: white
+        text-align: center
+        &.bx-prev
+          left: -30px
+        &.bx-next
+          right: -30px
+
+footer
+  background-color: $blue-color
+  color: $white-color
+  .social
+    a
+      color: $white-color
+      margin-left: 15px
+      font-size: 18px

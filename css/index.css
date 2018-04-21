@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Roboto");
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.77689em;
+  background-color: #E8E7E4;
+  color: #070000; }
+
+img {
+  max-width: 100%; }
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.flex-space-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.flex-space-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 52px; }
+
+h2 {
+  font-size: 46px; }
+
+h3 {
+  font-size: 30px;
+  margin: .3em 0; }
+
+h4 {
+  font-size: 24px; }
+
+h1, h2, h3, h4, .font-bebas {
+  font-family: 'Poppins', sans-serif;
+  line-height: normal; }
+
+a {
+  text-decoration: none;
+  color: #070000; }
+
+.animation-ease, .main-header ul li a, .projects .bx-wrapper .bx-viewport .project-item {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+
+.main-header {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99; }
+  .main-header ul li {
+    list-style: none;
+    margin-bottom: 15px; }
+    .main-header ul li a {
+      padding: 5px 15px;
+      background-color: rgba(7, 0, 0, 0.8);
+      color: #E8E7E4;
+      text-transform: uppercase; }
+      .main-header ul li a:hover {
+        margin-left: 10px;
+        background-color: rgba(13, 104, 255, 0.8); }
+
+.slider {
+  position: relative; }
+  .slider img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .slider .down {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #E8E7E4;
+    margin: -40px auto 0;
+    color: #070000;
+    -webkit-box-shadow: 0 0 5px #070000;
+    box-shadow: 0 0 5px #070000; }
+
+.resumen .container div {
+  width: 37%; }
+
+.services {
+  margin-top: 150px; }
+  .services .center-side {
+    margin-top: 50px; }
+    .services .center-side .cuadrado {
+      width: 430px;
+      height: 430px;
+      position: relative;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      overflow: hidden; }
+      .services .center-side .cuadrado .content {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        bottom: -100px;
+        right: -100px; }
+        .services .center-side .cuadrado .content img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover; }
+  .services .left-side .service-item {
+    text-align: right;
+    margin-bottom: 50px; }
+    .services .left-side .service-item .icon {
+      margin-left: 25px; }
+    .services .left-side .service-item:nth-child(2) {
+      margin-right: 150px; }
+  .services .right-side .service-item {
+    margin-bottom: 50px; }
+    .services .right-side .service-item .icon {
+      margin-right: 25px; }
+    .services .right-side .service-item:nth-child(2) {
+      margin-left: 150px; }
+
+.projects {
+  background-color: #070000;
+  padding: 75px 0;
+  margin-top: 75px; }
+  .projects .title {
+    color: #E8E7E4; }
+  .projects .bx-wrapper {
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .projects .bx-wrapper .bx-viewport {
+      padding: 40px 0; }
+      .projects .bx-wrapper .bx-viewport .project-item {
+        height: 250px;
+        margin-left: 10px;
+        line-height: normal;
+        -webkit-box-shadow: 0 0 25px rgba(7, 0, 0, 0.6);
+        box-shadow: 0 0 25px rgba(7, 0, 0, 0.6); }
+        .projects .bx-wrapper .bx-viewport .project-item .project-info {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          color: white;
+          padding: 30px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info .project-title {
+            margin: 0; }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info mark {
+            padding: 3px 15px;
+            background-color: #070000;
+            color: #E8E7E4; }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info a {
+            color: white;
+            position: absolute;
+            bottom: 30px;
+            right: 30px; }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info.green-bg {
+            background-color: rgba(105, 244, 40, 0.9); }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info.yellow-bg {
+            background-color: rgba(255, 255, 0, 0.8); }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info.pink-bg {
+            background-color: rgba(239, 2, 125, 0.8); }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info.purple-bg {
+            background-color: rgba(139, 12, 232, 0.8); }
+          .projects .bx-wrapper .bx-viewport .project-item .project-info.sky-bg {
+            background-color: rgba(13, 104, 255, 0.8); }
+        .projects .bx-wrapper .bx-viewport .project-item:hover {
+          z-index: 5;
+          -webkit-transform: scale(1.15, 1.15);
+          -ms-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15); }
+        .projects .bx-wrapper .bx-viewport .project-item img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover; }
+    .projects .bx-wrapper .bx-controls a {
+      text-indent: inherit;
+      color: white;
+      text-align: center; }
+      .projects .bx-wrapper .bx-controls a.bx-prev {
+        left: -30px; }
+      .projects .bx-wrapper .bx-controls a.bx-next {
+        right: -30px; }
+
+footer {
+  background-color: #07034A;
+  color: #E8E7E4; }
+  footer .social a {
+    color: #E8E7E4;
+    margin-left: 15px;
+    font-size: 18px; }
