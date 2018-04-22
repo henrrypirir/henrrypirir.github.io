@@ -14,15 +14,39 @@ $(function() {
   });
 
 
-  $('.bx-slider').bxSlider({
-    minSlides : 4,
-    maxSlides : 4,
-    moveSlides: 1,
-    slideMargin: 10,
-    slideWidth : 380,
-    pager: false,
-    nextText: "<i class='fas fa-chevron-right fa-2x'></i>",
-    prevText: "<i class='fas fa-chevron-left fa-2x'></i>"
-  });
+  if  ($(window).width() > 1022) {
+    $('.bx-slider').bxSlider({
+      minSlides : 4,
+      maxSlides : 4,
+      moveSlides: 1,
+      slideMargin: 10,
+      slideWidth : 380,
+      pager: false,
+      nextText: "<i class='fas fa-chevron-right fa-2x'></i>",
+      prevText: "<i class='fas fa-chevron-left fa-2x'></i>"
+    });
+
+  }
+
+      if  ($(window).width() > 621 && $(window).width() < 1022) {
+        $('.bx-slider').bxSlider({
+          minSlides : 2,
+          maxSlides : 2,
+          moveSlides: 1,
+          slideMargin: 10,
+          slideWidth : 380,
+          pager: false,
+          nextText: "<i class='fas fa-chevron-right fa-2x'></i>",
+          prevText: "<i class='fas fa-chevron-left fa-2x'></i>"
+        });
+      }
+
+      if ($(window).width() < 620) {
+        $('.bx-slider').bxSlider({
+          pager: false,
+          nextText: "<i class='fas fa-chevron-right fa-2x'></i>",
+          prevText: "<i class='fas fa-chevron-left fa-2x'></i>"
+        });
+      }
 
 });
